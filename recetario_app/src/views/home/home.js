@@ -10,9 +10,9 @@ export default function Home(props){
             </Text>
             <Button 
                 title='detalle'
-                onPress={()=>{
+                onPress={()=>
                     props.navigation.navigate('Detail')
-                }}
+                }
             />
         </View>
     )
