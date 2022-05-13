@@ -2,15 +2,21 @@ import React from 'react';
 import { View, Text, Button } from 'react-native';
 
 
-export default function Home(props){
-    return(
+export default function Home(props) {
+    return (
         <View>
-            <Text>
-                Home
-            </Text>
-            <Button 
+            <View>
+                <Text>Input</Text>
+            </View>
+            <View>
+                <Text>ScrollView horizontal</Text>
+            </View>
+            <View>
+                <Text>Recientes</Text>
+            </View>
+            <Button
                 title='detalle'
-                onPress={()=>
+                onPress={() =>
                     props.navigation.navigate('Detail')
                 }
             />
