@@ -1,15 +1,25 @@
 import React from 'react';
-import {TextInput} from 'react-native';
+import {TextInput, TouchableOpacity, View} from 'react-native';
 import styles from './styles';
+
+import SearchSVG from '../../../assets/icons/search.svg';
+import DictationSVG from '../../../assets/icons/dictation.svg';
 
 export default function SearchBar(props) {
   return (
-    <TextInput
-      style={styles.searchBar}
-      onChangeText={text => {
-        console.log(text);
-      }}
-      // value={text}
-    />
+    <View style={styles.container}>
+      <SearchSVG />
+      <TextInput
+        style={styles.searchBar}
+        placeholder="What do you want to eat?"
+        placeholderTextColor={'#fff'}
+        // onChangeText={text => {
+        //   console.log(text);
+        // }}
+      />
+      <TouchableOpacity style={styles.dictationButton}>
+        <DictationSVG />
+      </TouchableOpacity>
+    </View>
   );
 }

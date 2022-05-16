@@ -1,11 +1,11 @@
-import {StyleSheet} from 'react-native';
+import {StatusBar, StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
-  searchBar: {
-    height: 36,
-    width: '100%',
-    backgroundColor: 'rgba(142, 142, 147, 0.12)',
-    borderRadius: 10,
+  container: {
+    height: '100%',
+    backgroundColor: '#282828',
+    paddingHorizontal: 16,
+    paddingTop: 72 - StatusBar.currentHeight,
   },
 });
 

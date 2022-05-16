@@ -7,11 +7,15 @@
  */
 
 import React from 'react';
+import {StatusBar} from 'react-native';
 import Navigation from './src/routes';
 
 const App = () => {
   return (
-    <Navigation />
+    <>
+      <StatusBar translucent={true} backgroundColor={'transparent'} />
+      <Navigation />
+    </>
   );
 };
 
