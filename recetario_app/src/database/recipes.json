@@ -1,0 +1,92 @@
+{
+    "recent": [
+        {
+            "id": 1,
+            "image": "https://img.bestrecipes.com.au/f4jy177E/w643-h428-cfill-q90/br/2020/11/beef-stew-960642-2.jpg",
+            "title": "Beef stew",
+            "servings": 3,
+            "ingredients": [
+                {
+                    "ingredient": "extra virgin olive oil",
+                    "size": "2 cups"
+                },
+                {
+                    "ingredient": "gravy beef, cut into 4cm pieces",
+                    "size": "500 g"
+                },
+                {
+                    "ingredient": "large carrots, thickly sliced",
+                    "size": "2"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "image": "https://w6h5a5r4.rocketcdn.me/wp-content/uploads/2019/05/espaguetis-a-la-bolonesa-1080x671.jpg",
+            "title": "Spaghetti Bolognese",
+            "servings": 10,
+            "ingredients": [
+                {
+                    "ingredient": "Tomato",
+                    "size": 4
+                },
+                {
+                    "ingredient": "Onion",
+                    "size": "1/2"
+                },
+                {
+                    "ingredient": "Cheese",
+                    "size": "300 g "
+                },
+                {
+                    "ingredient": "meat",
+                    "size": "500 g "
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "image": "https://images.aws.nestle.recipes/resized/57bb23531c3f01075d66db6daee4e535_CREMA_DE_BROCOLI_1200_600.jpg",
+            "title": "Cream of broccoli",
+            "servings": 8,
+            "ingredients": [
+                {
+                    "ingredient": "Broccoli",
+                    "size": 4
+                },
+                {
+                    "ingredient": "Cream",
+                    "size": 1
+                },
+                {
+                    "ingredient": "Milk",
+                    "size": 2
+                },
+                {
+                    "ingredient": "Flour",
+                    "size": "15 g"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "image": "/espaguetis-a-la-bolonesa-1080x671.jpg",
+            "title": "Pancakes",
+            "servings": 10,
+            "ingredients": [
+                {
+                    "ingredient": "Flour",
+                    "size": "800g"
+                },
+                {
+                    "ingredient": "Butter",
+                    "size": "1/2"
+                },
+                {
+                    "ingredient": "Milk",
+                    "size": "1/2 "
+                }
+            ]
+        }
+    ]
+}

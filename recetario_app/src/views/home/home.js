@@ -1,21 +1,18 @@
 import React from 'react';
-import {View, Text, Button} from 'react-native';
+import {View} from 'react-native';
 import SearchBar from '../../components/common/searchBar';
 import Mode from '../../components/common/mode';
+import Recent from '../../components/common/recent';
 import styles from './styleshome';
 
-export default function Home(props) {
+export default function Home({navigation}) {
   return (
     <View style={styles.container}>
       <SearchBar />
       <Mode />
-      <View>
-        <Text>Recientes</Text>
-      </View>
-      <Button
-        title="detallsdede"
-        onPress={() => props.navigation.navigate('Detail')}
-      />
+      <Recent type="TRENDING" navigation={navigation} />
+      <View style={{height: 25}} />
+      <Recent type="RECENT" navigation={navigation} />
     </View>
   );
 }
