@@ -1,0 +1,276 @@
+{
+    "recipes": [
+      {
+        "id": 1,
+        "image": "http://images.kglobalservices.com/www.kelloggs.es/es_es/recipe/recipe_1642365/1642377_pancakes_estilo_all-bran.jpg",
+        "title": "Pancakes",
+        "servings": 10,
+        "ingredients": [
+          {
+            "ingredient": "Flour",
+            "size": "600g"
+          },
+          {
+            "ingredient": "Butter",
+            "size": "800g"
+          },
+          {
+            "ingredient": "Milk",
+            "size": "1/2"
+          },
+          {
+            "ingredient": "Eggs",
+            "size": "2"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "image": "https://saboryestilo.com.mx/wp-content/uploads/2020/12/espagueti-a-la-bolonesa.jpg",
+        "title": "Spaguetti Bolognesa",
+        "servings": 4,
+        "ingredients": [
+          {
+            "ingredient": "Spaguetti",
+            "size": "1"
+          },
+          {
+            "ingredient": "Oil",
+            "size": "10ml"
+          },
+          {
+            "ingredient": "Onion",
+            "size": "1/2"
+          },
+          {
+            "ingredient": "Salt and freshly ground black pepper",
+            "size": "to taste"
+          },
+          {
+            "ingredient": "Ground meat",
+            "size": "500g"
+          },
+          {
+            "ingredient": "Tomatoes",
+            "size": "2"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "image": "https://cdn.recetas360.com/wp-content/uploads/2021/03/como-cocinar-la-crema-de-brocoli.jpg",
+        "title": "Cream of broccoli",
+        "servings": 5,
+        "ingredients": [
+          {
+            "ingredient": "Broccoli",
+            "size": "2"
+          },
+          {
+            "ingredient": "Milk",
+            "size": "1"
+          },
+          {
+            "ingredient": "Flour",
+            "size": "10g"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "image": "https://www.gourmet4life.com/image0428/09/092384dd26ce82ecffe2e2b3f4ec39ba.jpg",
+        "title": "Locust",
+        "servings": 1,
+        "ingredients": [
+          {
+            "ingredient": "Locust",
+            "size": "1"
+          },
+          {
+            "ingredient": "Garlic",
+            "size": "3"
+          },
+          {
+            "ingredient": "Salt",
+            "size": "5g"
+          },
+          {
+            "ingredient": "Onion",
+            "size": "1/4"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "image": "https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2017/07/polloencremadechampinones1.jpg",
+        "title": "Chicken With Mushrooms Cream",
+        "servings": 6,
+        "ingredients": [
+          {
+            "ingredient": "Chicken fillet",
+            "size": "6 pieces"
+          },
+          {
+            "ingredient": "butter",
+            "size": "1"
+          },
+          {
+            "ingredient": "crushed garlic cloves",
+            "size": "2"
+          },
+          {
+            "ingredient": "Cream",
+            "size": "1 "
+          },
+          {
+            "ingredient": "Mushrooms",
+            "size": "400g"
+          },
+          {
+            "ingredient": "Flour",
+            "size": "30g"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "image": "https://www.madeleinecocina.com/wp-content/uploads/2014/02/DSC_1671.jpg",
+        "title": "Beef with broccoli",
+        "servings": 4,
+        "ingredients": [
+          {
+            "ingredient": "Beef",
+            "size": "500g"
+          },
+          {
+            "ingredient": "Broccoli",
+            "size": "1"
+          },
+          {
+            "ingredient": "Onion",
+            "size": "1/2"
+          },
+          {
+            "ingredient": "Bell pepper",
+            "size": "2"
+          },
+          {
+            "ingredient": "Rice",
+            "size": "100g"
+          },
+          {
+            "ingredient": "olive oil",
+            "size": "1"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "image": "https://i.pinimg.com/736x/69/e3/8c/69e38c73d43a93d6378f960fa33fc5ee--authentic-mexican-recipes-carne-asada.jpg",
+        "title": "Skirt steak",
+        "servings": 1,
+        "ingredients": [
+          {
+            "ingredient": "Skirt steak",
+            "size": "500g"
+          },
+          {
+            "ingredient": "Soy sauce",
+            "size": "15 ml"
+          },
+          {
+            "ingredient": "Salt",
+            "size": "15g"
+          },
+          {
+            "ingredient": "Garlic and Pepper",
+            "size": "to taste"
+          },
+          {
+            "ingredient": "olive oil",
+            "size": "20g"
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "image": "https://tvpacifico.mx/recetas/intranet/images/recipes/322-341.jpg",
+        "title": "Melted Cheese with Chorizo",
+        "servings": 6,
+        "ingredients": [
+         {
+            "ingredient": "Chorizo",
+            "size": "300g"
+          },
+          {
+            "ingredient": "butter",
+            "size": "1 tbsp"
+          },
+          {
+            "ingredient": "garlic clove, crushed",
+            "size": "1"
+          },
+          {
+            "ingredient": "Cheese",
+            "size": "700g"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "image": "https://www.hola.com/imagenes/cocina/recetas/20200205159814/alitas-de-pollo-a-la-americana-buffalo-wings/0-778-671/aitas-de-pollo-a-la-americana-o-buffalo-wings-m.jpg",
+        "title": "Chicken wings",
+        "servings": 4,
+        "ingredients": [
+          {
+            "ingredient": "Chicken wings",
+            "size": "1000g"
+          },
+          {
+            "ingredient": "BBQ SAUCE",
+            "size": "200g"
+          },
+          {
+            "ingredient": "garlic cloves, crushed",
+            "size": "2"
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "image": "https://okdiario.com/img/2021/12/09/hamburguesas-caseras-rellenas-de-queso-cheddar.jpg",
+        "title": "Burger",
+        "servings": 4,
+        "ingredients": [
+          {
+            "ingredient": "Meat",
+            "size": "500g"
+          },
+          {
+            "ingredient": "Bacon",
+            "size": "500g"
+          },
+          {
+            "ingredient": "Yellow cheese",
+            "size": "4"
+          },
+          {
+            "ingredient": "Tomatoe",
+            "size": "2"
+          },
+          {
+            "ingredient": "Lettuce",
+            "size": "1"
+          },
+          {
+            "ingredient": "Onion",
+            "size": "1"
+          },
+          {
+            "ingredient": "Hamburger bun",
+            "size": "4"
+          }
+        ]
+      }
+    ]
+  }
