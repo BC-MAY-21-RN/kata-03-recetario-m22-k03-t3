@@ -6,11 +6,13 @@ import styles from '../../../components/common/mode/styles';
 
 export default function Mode({}) {
   return (
-    <TouchableOpacity style={styles.container}>
+    <TouchableOpacity style={styles.container} onPress={changeMode}>
       <View style={styles.oval}>
         <NightSVG />
       </View>
-      <Text style={styles.text}>Normal mode</Text>
+      <Text style={mode ? styles.text : styles.text2}>
+        {mode ? 'Normal Mode' : 'Night Mode'}
+        </Text>
     </TouchableOpacity>
   );
 }

@@ -7,6 +7,12 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     paddingTop: 72 - StatusBar.currentHeight,
   },
+  container2: {
+    height: '100%',
+    backgroundColor: '#ffffff',
+    paddingHorizontal: 16,
+    paddingTop: 72 - StatusBar.currentHeight,
+  },
 });
 
 export default styles;

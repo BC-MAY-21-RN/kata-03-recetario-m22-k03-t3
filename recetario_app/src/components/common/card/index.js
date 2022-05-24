@@ -1,31 +1,50 @@
 import React from 'react';
 import {Text, Image, TouchableOpacity} from 'react-native';
+import styles from './styles';
 
-export default function Card({isLast, type, onPress}) {
+
+const textStyle = (valbool, valbool2) => {
+  if (valbool) {
+    if (valbool2) {
+      return styles.textlistnight;
+    } else {
+      return styles.textlist2night;
+    }
+  } else {
+    if (valbool2) {
+      return styles.textlistnormal;
+    } else {
+      return styles.textlist2normal;
+    }
+  }
+};
+
+const isLastStyle = (valbool, valbool2) => {
+  if (valbool) {
+    if (valbool2) {
+      return styles.containertrending;
+    } else {
+      return styles.containerrecent;
+    }
+  } else {
+    if (valbool2) {
+      return styles.containertrendinglast;
+    } else {
+      return styles.containerrecentlast;
+    }
+  }
+};
+
+export default function Card({isLast, type, onPress, mode}) {
   return (
     <TouchableOpacity
       onPress={onPress}
-      style={{
-        width: type === 'TRENDING' ? 110 : 160,
-        height: type === 'TRENDING' ? 150 : 228,
-        marginRight: !isLast ? 21.5 : 0,
-      }}>
+      style={isLastStyle(!isLast, type === 'TRENDING')}>
       <Image
         source={require('../../../assets/images/pizza.jpg')}
-        style={{
-          width: type === 'TRENDING' ? 110 : 160,
-          height: type === 'TRENDING' ? 110 : 195,
-          borderRadius: 10,
-        }}
+        style={type === 'TRENDING' ? styles.imagetrending : styles.imagerecent}
       />
-      <Text
-        style={{
-          fontSize: type === 'TRENDING' ? 14 : 18,
-          color: '#ffffff',
-          marginTop: 13.8,
-        }}>
-        Pizza de colima
-      </Text>
+      <Text style={textStyle(mode, type === 'TRENDING')}>Pizza de Colima</Text>
     </TouchableOpacity>
   );
 }

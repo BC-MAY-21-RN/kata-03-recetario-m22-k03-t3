@@ -1,21 +1,22 @@
 import React from 'react';
 import {View, ScrollView, Text} from 'react-native';
 import Card from '../card';
+import styles from './styles';
 
-export default function Recent({type, navigation}) {
+export default function Recent({type, navigation, mode}) {
   const data = new Array(5).fill(0);
   return (
     <View>
-      <Text style={{fontSize: 21, color: '#f91a81', marginBottom: 18.48}}>
-        {type}
-      </Text>
+      <Text style={styles.text}>{type}</Text>
       <ScrollView horizontal={true}>
-        {data.map((_, i) => (
+        {data.map((item, i) => (
           <Card
+            key={i}
+            mode={mode}
             isLast={i === data.length - 1}
             type={type}
             onPress={() =>
-              navigation.navigate('Detail', {type, name: 'Pizsa de colima'})
+              navigation.navigate('Detail', {type, name: 'Pizza de colima'})
             }
           />
         ))}

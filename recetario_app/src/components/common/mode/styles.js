@@ -19,7 +19,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  text: {color: '#fff', fontSize: 15, lineHeight: 18, marginLeft: 14},
+  text: {color: '#ffffff', fontSize: 15, lineHeight: 18, marginLeft: 14},
+  text2: {color: '#000000', fontSize: 15, lineHeight: 18, marginLeft: 14},
 });
 
 export default styles;
