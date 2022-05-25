@@ -10,14 +10,14 @@ export default function Home({navigation}) {
   const [mode, setMode] = useState(true);
   //Cambiar Mode
   const changeMode = () => {
-    setMode (!mode);
+    setMode(!mode);
   };
 
   return (
     <ScrollView style={mode ? styles.container : styles.container2}>
       <SearchBar mode={mode} />
-      <Mode mode={mode} changeMode={changeMode}/>
-      <Recent type="TRENDING" navigation={navigation} mode={mode}/>
+      <Mode mode={mode} changeMode={changeMode} />
+      <Recent type="TRENDING" navigation={navigation} mode={mode} />
       <View style={{height: 25}} />
       <Recent type="RECENT" navigation={navigation} mode={mode} />
     </ScrollView>
