@@ -22,15 +22,19 @@ const IconButtons = ({navigation}) => {
   );
 };
 
-export default function BarTitleDetail({navigation, type, name}) {
+export default function BarTitleDetail({navigation, type, name, mode}) {
+  /*const goBack = () => {
+    navigation.goBack;
+  };*/
+
   return (
     <View>
       <Image
         source={require('../../../assets/images/pizza.jpg')}
         style={styles.image}
       />
-      <IconButtons navigation={navigation} />
-      <View style={styles.viewfront}>
+      <View style={mode ? styles.viewfront : styles.viewfront2}>
+        <IconButtons navigation={navigation} />
         <Text style={styles.texttype}>{type}</Text>
         <Text style={styles.textname}>{name}</Text>
       </View>

@@ -14,7 +14,7 @@ export default function SearchBar(props) {
       <TextInput
         style={styles.searchBar}
         placeholder="What do you want to eat?"
-        placeholderTextColor={props.mode ? '#fff':'#8E8E93'}
+        placeholderTextColor={props.mode ? '#ffffff' : '#8E8E93'}
         // onChangeText={text => {
         //   console.log(text);
         // }}

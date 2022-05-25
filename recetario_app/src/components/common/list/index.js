@@ -3,7 +3,7 @@ import {View, ScrollView, Text} from 'react-native';
 import Card from '../card';
 import styles from './styles';
 
-export default function Recent({type, navigation, mode}) {
+export default function List({type, navigation, mode}) {
   const data = new Array(5).fill(0);
   return (
     <View>
@@ -16,7 +16,11 @@ export default function Recent({type, navigation, mode}) {
             isLast={i === data.length - 1}
             type={type}
             onPress={() =>
-              navigation.navigate('Detail', {type, name: 'Pizza de colima'})
+              navigation.navigate('Detail', {
+                type,
+                name: 'Pizza de colima',
+                mode,
+              })
             }
           />
         ))}

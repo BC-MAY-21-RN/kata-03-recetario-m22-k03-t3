@@ -1,66 +1,51 @@
 import React from 'react';
-import {View, Text, Image, StatusBar, TouchableOpacity} from 'react-native';
+import {
+  View,
+  Text,
+  Image,
+  StatusBar,
+  TouchableOpacity,
+  ScrollView,
+} from 'react-native';
 import BarTitleDetail from '../../components/common/barTitleDetail';
+import styles from './stylesdetail';
 
-import ExitSVG from '../../assets/icons/exit.svg';
+/*import ExitSVG from '../../assets/icons/exit.svg';
 import ShareSVG from '../../assets/icons/share.svg';
-import HeartSVG from '../../assets/icons/heart.svg';
+import HeartSVG from '../../assets/icons/heart.svg';*/
 
 export default function Detail({navigation, route}) {
   const ingredients = new Array(4).fill(0);
   return (
-    <View
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        backgroundColor: '#282828',
-        height: '100%',
-      }}>
+    <ScrollView
+      style={route.params.mode ? styles.container : styles.container2}>
       <BarTitleDetail
         navigation={navigation}
         type={route.params.type}
         name={route.params.name}
+        mode={route.params.mode}
       />
-      <View style={{padding: 20.3}}>
-        <Text
-          style={{
-            fontSize: 20,
-            lineHeight: 24,
-            color: '#fff',
-            marginBottom: 6.5,
-          }}>
+      <View style={styles.padding}>
+        <Text style={route.params.mode ? styles.a1 : styles.na1}>
           Ingredients
         </Text>
-        <Text style={{fontSize: 18, lineHeight: 22, color: '#fff'}}>
+        <Text style={route.params.mode ? styles.a2 : styles.na2}>
           for 3 servings
         </Text>
         {ingredients.map((_, i) => (
-          <View
-            key={i.toString()}
-            style={{
-              height: 50,
-              borderBottomColor: '#3B3B3B',
-              borderBottomWidth: 1,
-              display: 'flex',
-              flexDirection: 'row',
-              alignItems: 'center',
-              justifyContent: 'space-between',
-            }}>
+          <View key={i.toString()} style={styles.listcontainer}>
             <Text
-              style={{
-                fontSize: 16,
-                lineHeight: 19,
-                color: '#fff',
-              }}>
+              style={route.params.mode ? styles.lefttext : styles.nlefttext}>
               Ingredient
             </Text>
-            <Text style={{fontSize: 16, lineHeight: 19, color: '#fff'}}>
+            <Text
+              style={route.params.mode ? styles.righttext : styles.nrighttext}>
               {3} {'cups'}
             </Text>
           </View>
         ))}
       </View>
-    </View>
+    </ScrollView>
   );
 }
 

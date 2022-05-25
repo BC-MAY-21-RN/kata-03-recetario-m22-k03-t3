@@ -1,9 +1,9 @@
 import React from 'react';
 import {Text, Image, TouchableOpacity} from 'react-native';
 import styles from './styles';
+import functions from './functions';
 
-
-const textStyle = (valbool, valbool2) => {
+/*const textStyle = (valbool, valbool2) => {
   if (valbool) {
     if (valbool2) {
       return styles.textlistnight;
@@ -33,18 +33,20 @@ const isLastStyle = (valbool, valbool2) => {
       return styles.containerrecentlast;
     }
   }
-};
+};*/
 
 export default function Card({isLast, type, onPress, mode}) {
   return (
     <TouchableOpacity
       onPress={onPress}
-      style={isLastStyle(!isLast, type === 'TRENDING')}>
+      style={functions.isLastStyle(!isLast, type === 'TRENDING')}>
       <Image
         source={require('../../../assets/images/pizza.jpg')}
         style={type === 'TRENDING' ? styles.imagetrending : styles.imagerecent}
       />
-      <Text style={textStyle(mode, type === 'TRENDING')}>Pizza de Colima</Text>
+      <Text style={functions.textStyle(mode, type === 'TRENDING')}>
+        Pizza de Colima
+      </Text>
     </TouchableOpacity>
   );
 }

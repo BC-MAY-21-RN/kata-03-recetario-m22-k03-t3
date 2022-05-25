@@ -13,6 +13,9 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     paddingTop: 72 - StatusBar.currentHeight,
   },
+  br: {
+    height: 25,
+  },
 });
 
 export default styles;
