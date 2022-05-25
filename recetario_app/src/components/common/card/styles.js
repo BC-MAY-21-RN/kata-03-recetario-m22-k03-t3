@@ -3,22 +3,22 @@ import {StyleSheet} from 'react-native';
 const styles = StyleSheet.create({
   containertrending: {
     width: 110,
-    height: 150,
+    height: 160,
     marginRight: 21.5,
   },
   containerrecent: {
     width: 160,
-    height: 288,
+    height: 300,
     marginRight: 21.5,
   },
   containertrendinglast: {
     width: 110,
-    height: 150,
+    height: 160,
     marginRight: 0,
   },
   containerrecentlast: {
     width: 160,
-    height: 228,
+    height: 300,
     marginRight: 0,
   },
   imagetrending: {

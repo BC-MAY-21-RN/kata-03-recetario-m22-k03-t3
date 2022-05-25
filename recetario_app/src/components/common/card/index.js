@@ -35,17 +35,18 @@ const isLastStyle = (valbool, valbool2) => {
   }
 };*/
 
-export default function Card({isLast, type, onPress, mode}) {
+export default function Card({isLast, type, onPress, mode, dish}) {
+  //const url = '../../../assets/images/' + encodeURIComponent(dish.image);
   return (
     <TouchableOpacity
       onPress={onPress}
       style={functions.isLastStyle(!isLast, type === 'TRENDING')}>
       <Image
-        source={require('../../../assets/images/pizza.jpg')}
+        source={{uri: dish.image}}
         style={type === 'TRENDING' ? styles.imagetrending : styles.imagerecent}
       />
       <Text style={functions.textStyle(mode, type === 'TRENDING')}>
-        Pizza de Colima
+        {dish.title}
       </Text>
     </TouchableOpacity>
   );

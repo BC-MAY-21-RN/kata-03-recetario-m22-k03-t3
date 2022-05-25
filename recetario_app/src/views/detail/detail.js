@@ -13,6 +13,7 @@ import styles from './stylesdetail';
 /*import ExitSVG from '../../assets/icons/exit.svg';
 import ShareSVG from '../../assets/icons/share.svg';
 import HeartSVG from '../../assets/icons/heart.svg';*/
+// ingredients
 
 export default function Detail({navigation, route}) {
   const ingredients = new Array(4).fill(0);
@@ -24,23 +25,24 @@ export default function Detail({navigation, route}) {
         type={route.params.type}
         name={route.params.name}
         mode={route.params.mode}
+        dish={route.params.dish}
       />
       <View style={styles.padding}>
         <Text style={route.params.mode ? styles.a1 : styles.na1}>
           Ingredients
         </Text>
         <Text style={route.params.mode ? styles.a2 : styles.na2}>
-          for 3 servings
+          for {route.params.dish.servings} servings
         </Text>
-        {ingredients.map((_, i) => (
+        {route.params.dish.ingredients.map((item, i) => (
           <View key={i.toString()} style={styles.listcontainer}>
             <Text
               style={route.params.mode ? styles.lefttext : styles.nlefttext}>
-              Ingredient
+              {item.ingredient}
             </Text>
             <Text
               style={route.params.mode ? styles.righttext : styles.nrighttext}>
-              {3} {'cups'}
+              {item.size}
             </Text>
           </View>
         ))}
@@ -48,6 +50,11 @@ export default function Detail({navigation, route}) {
     </ScrollView>
   );
 }
+
+/**
+ *                     "ingredient": "Tomato",
+                    "size": 4
+ */
 
 /*
 
