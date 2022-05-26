@@ -9,7 +9,6 @@ const styles = StyleSheet.create({
     position: 'absolute',
     width: '100%',
     height: 385,
-    backgroundColor: 'rgba(43,41,41,0.53)',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'flex-end',
@@ -36,17 +35,8 @@ const styles = StyleSheet.create({
   },
   textname: {fontSize: 25, lineHeight: 30, color: '#fff'},
   iconsright: {flex: 1},
-  viewfront2: {
-    position: 'absolute',
-    width: '100%',
-    height: 385,
-    backgroundColor: 'rgba(255,255,255,0.53)',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'flex-end',
-    paddingBottom: 42.5,
-    paddingHorizontal: 26.8,
-  },
+  colorviewfront: {backgroundColor: 'rgba(43,41,41,0.53)'},
+  color2viewfront: {backgroundColor: 'rgba(255,255,255,0.53)'},
 });
 
 export default styles;

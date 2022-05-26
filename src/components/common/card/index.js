@@ -2,18 +2,29 @@ import React from 'react';
 import {Text, Image, TouchableOpacity} from 'react-native';
 import styles from './styles';
 import functions from './functions';
-
+// functions.isLastStyle(!isLast, type === 'TRENDING')
+// functions.textStyle(mode, type === 'TRENDING')
 export default function Card({isLast, type, onPress, mode, dish}) {
-  //const url = '../../../assets/images/' + encodeURIComponent(dish.image);
   return (
     <TouchableOpacity
       onPress={onPress}
-      style={functions.isLastStyle(!isLast, type === 'TRENDING')}>
+      style={{
+        ...(type === 'TRENDING'
+          ? styles.containertrending
+          : styles.containerrecent),
+        ...(!isLast ? styles.isnotlast : null),
+      }}>
       <Image
         source={{uri: dish.image}}
         style={type === 'TRENDING' ? styles.imagetrending : styles.imagerecent}
       />
-      <Text style={functions.textStyle(mode, type === 'TRENDING')}>
+      <Text
+        style={{
+          ...(type === 'TRENDING'
+            ? styles.textlisttrending
+            : styles.textlistrecent),
+          ...(mode ? styles.whitecolortext : styles.blackcolortext),
+        }}>
         {dish.title}
       </Text>
     </TouchableOpacity>

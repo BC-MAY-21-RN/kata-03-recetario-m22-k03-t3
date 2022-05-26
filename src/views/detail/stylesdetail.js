@@ -4,15 +4,10 @@ const styles = StyleSheet.create({
   container: {
     display: 'flex',
     flexDirection: 'column',
-    backgroundColor: '#282828',
     height: '100%',
   },
-  container2: {
-    display: 'flex',
-    flexDirection: 'column',
-    backgroundColor: '#ffffff',
-    height: '100%',
-  },
+  nightcolorcontainer: {backgroundColor: '#282828'},
+  normalcolorcontainer: {backgroundColor: '#ffffff'},
   a1: {
     fontSize: 20,
     lineHeight: 24,

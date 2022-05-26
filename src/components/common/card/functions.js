@@ -1,4 +1,4 @@
-import styles from './styles';
+/*import styles from './styles';
 
 const textStyle = (valbool, valbool2) => {
   if (valbool) {
@@ -32,4 +32,4 @@ const isLastStyle = (valbool, valbool2) => {
   }
 };
 
-export default {textStyle, isLastStyle};
+export default {textStyle, isLastStyle};*/

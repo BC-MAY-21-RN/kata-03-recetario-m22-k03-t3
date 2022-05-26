@@ -9,7 +9,11 @@ export default function Mode({changeMode, mode}) {
       <View style={styles.oval}>
         <NightSVG />
       </View>
-      <Text style={mode ? styles.text : styles.text2}>
+      <Text
+        style={{
+          ...styles.text,
+          ...(mode ? styles.whitecolor : styles.blackcolor),
+        }}>
         {mode ? 'Normal Mode' : 'Night Mode'}
       </Text>
     </TouchableOpacity>

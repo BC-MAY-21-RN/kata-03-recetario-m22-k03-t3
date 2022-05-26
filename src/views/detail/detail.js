@@ -3,11 +3,18 @@ import {View, Text, ScrollView} from 'react-native';
 import BarTitleDetail from '../../components/common/barTitleDetail';
 import styles from './stylesdetail';
 
+const backgroundColor = mode => {
+  if (mode) {
+    return styles.nightcolorcontainer;
+  } else {
+    return styles.normalcolorcontainer;
+  }
+};
+
 export default function Detail({navigation, route}) {
-  //const ingredients = new Array(4).fill(0);
   return (
     <ScrollView
-      style={route.params.mode ? styles.container : styles.container2}>
+      style={{...styles.container, ...backgroundColor(route.params.mode)}}>
       <BarTitleDetail
         navigation={navigation}
         type={route.params.type}
@@ -38,67 +45,3 @@ export default function Detail({navigation, route}) {
     </ScrollView>
   );
 }
-
-/**
- *                     "ingredient": "Tomato",
-                    "size": 4
- */
-
-/*
-
-      <Image
-        source={require('../../assets/images/pizza.jpg')}
-        style={{
-          width: '100%',
-          height: 385,
-        }}
-      />
-      <View
-        style={{
-          position: 'absolute',
-          width: '100%',
-          height: 385,
-          backgroundColor: 'rgba(43,41,41,0.53)',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'flex-end',
-          paddingBottom: 42.5,
-          paddingHorizontal: 26.8,
-        }}>
-        <View
-          style={{
-            height: 64,
-            display: 'flex',
-            flexDirection: 'row',
-            alignItems: 'center',
-            position: 'absolute',
-            top: StatusBar.currentHeight,
-            left: 25,
-            right: 28,
-          }}>
-          <TouchableOpacity style={{padding: 8}} onPress={navigation.goBack}>
-            <ExitSVG />
-          </TouchableOpacity>
-          <View style={{flex: 1}} />
-          <TouchableOpacity style={{padding: 8, marginRight: 15}}>
-            <ShareSVG />
-          </TouchableOpacity>
-          <TouchableOpacity style={{padding: 8}}>
-            <HeartSVG />
-          </TouchableOpacity>
-        </View>
-        <Text
-          style={{
-            fontSize: 18,
-            lineHeight: 22,
-            color: '#fff',
-            marginBottom: 2.4,
-          }}>
-          {route.params.type}
-        </Text>
-        <Text style={{fontSize: 25, lineHeight: 30, color: '#fff'}}>
-          {route.params.name}
-        </Text>
-      </View>
-
-*/

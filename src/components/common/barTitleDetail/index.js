@@ -26,7 +26,11 @@ export default function BarTitleDetail({navigation, type, name, mode, dish}) {
   return (
     <View>
       <Image source={{uri: dish.image}} style={styles.image} />
-      <View style={mode ? styles.viewfront : styles.viewfront2}>
+      <View
+        style={{
+          ...styles.viewfront,
+          ...(mode ? styles.colorviewfront : styles.color2viewfront),
+        }}>
         <IconButtons navigation={navigation} />
         <Text style={styles.texttype}>{type}</Text>
         <Text style={styles.textname}>{name}</Text>

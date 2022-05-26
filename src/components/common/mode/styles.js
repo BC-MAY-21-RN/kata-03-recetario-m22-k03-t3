@@ -19,8 +19,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  text: {color: '#ffffff', fontSize: 15, lineHeight: 18, marginLeft: 14},
-  text2: {color: '#000000', fontSize: 15, lineHeight: 18, marginLeft: 14},
+  text: {fontSize: 15, lineHeight: 18, marginLeft: 14},
+  whitecolor: {color: '#ffffff'},
+  blackcolor: {color: '#000000'},
 });
 
 export default styles;
