@@ -3,8 +3,7 @@ import {View, ScrollView, Text} from 'react-native';
 import Card from '../card';
 import styles from './styles';
 
-export default function List({type, navigation, mode, data}) {
-  //const data = new Array(5).fill(0);
+export default function List({type, navigation, mode, data, insertData}) {
   return (
     <View>
       <Text style={styles.text}>{type}</Text>
@@ -16,14 +15,15 @@ export default function List({type, navigation, mode, data}) {
             mode={mode}
             isLast={i === data.length - 1}
             type={type}
-            onPress={() =>
+            onPress={() => {
+              insertData([item]);
               navigation.navigate('Detail', {
                 type,
                 name: item.title,
                 mode,
                 dish: item,
-              })
-            }
+              });
+            }}
           />
         ))}
       </ScrollView>

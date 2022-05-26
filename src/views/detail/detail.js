@@ -1,22 +1,10 @@
 import React from 'react';
-import {
-  View,
-  Text,
-  Image,
-  StatusBar,
-  TouchableOpacity,
-  ScrollView,
-} from 'react-native';
+import {View, Text, ScrollView} from 'react-native';
 import BarTitleDetail from '../../components/common/barTitleDetail';
 import styles from './stylesdetail';
 
-/*import ExitSVG from '../../assets/icons/exit.svg';
-import ShareSVG from '../../assets/icons/share.svg';
-import HeartSVG from '../../assets/icons/heart.svg';*/
-// ingredients
-
 export default function Detail({navigation, route}) {
-  const ingredients = new Array(4).fill(0);
+  //const ingredients = new Array(4).fill(0);
   return (
     <ScrollView
       style={route.params.mode ? styles.container : styles.container2}>

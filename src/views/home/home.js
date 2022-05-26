@@ -9,9 +9,15 @@ import data from '../../database/recipes.json';
 export default function Home({navigation}) {
   //Hook useState
   const [mode, setMode] = useState(true);
+  const [recentData, setRecentData] = useState([]);
   //Cambiar Mode
   const changeMode = () => {
     setMode(!mode);
+  };
+
+  const insertData = data => {
+    const newData = new Set([...data, ...recentData]);
+    setRecentData(Array.from(newData));
   };
 
   return (
@@ -23,13 +29,15 @@ export default function Home({navigation}) {
         navigation={navigation}
         mode={mode}
         data={data.recent}
+        insertData={insertData}
       />
       <View style={styles.br} />
       <List
         type="RECENT"
         navigation={navigation}
         mode={mode}
-        data={data.recent}
+        data={recentData}
+        insertData={insertData}
       />
     </ScrollView>
   );
