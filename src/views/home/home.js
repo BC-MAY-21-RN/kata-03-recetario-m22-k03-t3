@@ -4,7 +4,8 @@ import SearchBar from '../../components/common/searchBar';
 import Mode from '../../components/common/mode';
 import List from '../../components/common/list';
 import styles from './styleshome';
-import data from '../../database/recipes.json';
+//import data from '../../database/recipes.json';
+import data from '../../../database/recipes.json';
 
 const backgroundColor = mode => {
   if (mode) {
@@ -36,7 +37,7 @@ export default function Home({navigation}) {
         type="TRENDING"
         navigation={navigation}
         mode={mode}
-        data={data.recent}
+        data={data.recipes}
         insertData={insertData}
       />
       <View style={styles.br} />
