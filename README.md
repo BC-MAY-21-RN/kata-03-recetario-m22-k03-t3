@@ -1,3 +1,5 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/b718293f7013d472dff6/maintainability)](https://codeclimate.com/github/BC-MAY-21-RN/kata-03-recetario-m22-k03-t3/maintainability)
+
 ![BrightCoders Logo](img/logo-bc.png)
 
 # Recetario de Cocina App
